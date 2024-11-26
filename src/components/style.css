@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+.gradient-hero1 {
+    background: radial-gradient(circle at center left, rgba(37, 88, 208, .5) 0, transparent 80%, transparent 100%);
+}
+
+.gradient-hero2 {
+    background: radial-gradient(circle at bottom right, rgba(37, 88, 208, .5) 0, transparent 80%, transparent 100%);
+}

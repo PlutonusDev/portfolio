@@ -1,0 +1,40 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "GPL-3.0-only",
+  "scripts": {
+    "dev": "next dev -p 8001",
+    "build": "next build",
+    "start": "next start -p 8001",
+    "prime": "npx prisma generate"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.3",
+    "@types/react": "^18.3.12",
+    "autoprefixer": "^10.4.20",
+    "babel-plugin-formatjs": "^10.5.26",
+    "eslint": "^9.15.0",
+    "eslint-config-next": "^15.0.3",
+    "eslint-plugin-formatjs": "^5.2.5",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@splinetool/react-spline": "^4.0.0",
+    "@splinetool/runtime": "^1.9.46",
+    "@tailwindcss/typography": "^0.5.15",
+    "aos": "^2.3.4",
+    "cookies-next": "^5.0.2",
+    "gsap": "^3.12.5",
+    "next": "^15.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.3.0",
+    "react-intl": "^7.0.1",
+    "react-spinners": "^0.14.1",
+    "sharp": "^0.33.5",
+    "styled-components": "^6.1.13"
+  }
+}
