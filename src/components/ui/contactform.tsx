@@ -57,24 +57,24 @@ export default () => {
                     <div className="flex flex-col space-y-8">
                         <div key="name">
                             <label htmlFor="name" className="mb-1 block text-base font-medium">Full Name</label>
-                            <input type="text" placeholder="Full Name" className="w-full rounded-md ring-2 ring-slate-500 bg-slate-800 py-2 px-3 text-base font-medium text-slate-100 outline-none focus:ring-blue-500 focus:shadow-md transition-all duration-300" {...register("name", { required: true })} />
+                            <input disabled={waiting} type="text" placeholder="Full Name" className="w-full rounded-md ring-2 ring-slate-500 bg-slate-800 py-2 px-3 text-base font-medium text-slate-100 outline-none focus:ring-blue-500 focus:shadow-md transition-all duration-300 disabled:bg-slate-600 disabled:text-slate-300 disabled:cursor-not-allowed" {...register("name", { required: true })} />
                         </div>
                         <div key="email">
                             <label htmlFor="email" className="mb-1 block text-base font-medium">Your Email</label>
-                            <input type="text" placeholder="you@gmail.com" className="w-full rounded-md ring-2 ring-slate-500 bg-slate-800 py-2 px-3 text-base font-medium text-slate-100 outline-none focus:ring-blue-500 focus:shadow-md transition-all duration-300" {...register("email", { required: true })} />
+                            <input disabled={waiting} type="text" placeholder="you@gmail.com" className="w-full rounded-md ring-2 ring-slate-500 bg-slate-800 py-2 px-3 text-base font-medium text-slate-100 outline-none focus:ring-blue-500 focus:shadow-md transition-all duration-300 disabled:bg-slate-600 disabled:text-slate-300 disabled:cursor-not-allowed" {...register("email", { required: true })} />
                         </div>
                         <div key="submit" className="flex flex-col space-y-2">
                             <span className={`h-6 ${failure ? "text-red-500" : "text-green-500"}`}>{failure}{success}</span>
                             <button
                                 disabled={waiting}
-                                className="border-solid border-1 border-gray-300 rounded-md p-2 bg-blue-500 text-white disabled:bg-gray-300 disabled:text-gray-500 disabled:cursor-not-allowed"
+                                className="border-solid border-1 border-gray-300 rounded-md p-2 bg-blue-500 text-white disabled:bg-slate-600 disabled:text-slate-300 disabled:cursor-not-allowed"
                                 type="submit"
                             >Send Message</button>
                         </div>
                     </div>
                     <div className="col-span-2">
                         <label htmlFor="message" className="mb-1 block text-base font-medium">Your Message</label>
-                        <textarea placeholder="Write your message here..." className="w-full resize-none h-64 rounded-md ring-2 ring-slate-500 bg-slate-800 py-2 px-3 text-base font-medium text-slate-100 outline-none focus:ring-blue-500 focus:shadow-md transition-all duration-300" {...register("message", { required: true })} />
+                        <textarea disabled={waiting} placeholder="Write your message here..." className="w-full resize-none h-64 rounded-md ring-2 ring-slate-500 bg-slate-800 py-2 px-3 text-base font-medium text-slate-100 outline-none focus:ring-blue-500 focus:shadow-md transition-all duration-300 disabled:bg-slate-600 disabled:text-slate-300 disabled:cursor-not-allowed" {...register("message", { required: true })} />
                         <span className="float-right text-slate-400 italic">We'll send you an email confirming receipt of your message.</span>
                     </div>
                 </div>
