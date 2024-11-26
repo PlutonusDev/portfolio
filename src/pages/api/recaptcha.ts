@@ -1,6 +1,7 @@
 import axios from "axios";
+import { NextApiRequest, NextApiResponse } from "next";
 
-export async function POST(req: Request) {
+export default async (req: NextApiRequest, res: NextApiResponse) => {
     if (req.method !== "POST") {
         return new Response(
             JSON.stringify({ message: "Only POST requests allowed" }),
@@ -8,14 +9,12 @@ export async function POST(req: Request) {
         );
     }
 
-    const data = await req.json();
+    const data = await req.body;
     const { token } = data;
     const secretKey: string | undefined = process.env.RECAPTCHA_SECRET_KEY;
 
     if (!token) {
-        return new Response(JSON.stringify({ message: "Token not found" }), {
-            status: 405,
-        });
+        return res.status(405).json({ message: "Token missing" })
     }
 
     try {
@@ -24,17 +23,11 @@ export async function POST(req: Request) {
         );
 
         if (response.data.success) {
-            return new Response(JSON.stringify({ message: "Success" }), {
-                status: 200,
-            });
+            return res.status(200).json({ message: "OK" })
         } else {
-            return new Response(JSON.stringify({ message: "Failed to verify" }), {
-                status: 405,
-            });
+            return res.status(405).json({ message: "Verification failed" })
         }
     } catch (error) {
-        return new Response(JSON.stringify({ message: "Internal Server Error" }), {
-            status: 500,
-        });
+        return res.status(500).json({ message: "Internal error" })
     }
 }
