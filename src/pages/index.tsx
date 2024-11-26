@@ -20,8 +20,10 @@ import {
     SiCsharp,
     SiDotnet
 } from "react-icons/si";
+
 import Badge from "@components/ui/badge";
 import Project from "@components/ui/project";
+import ContactForm from "@components/ui/contactform";
 
 export default () => {
     const component = useRef(null);
@@ -196,6 +198,10 @@ export default () => {
                     </ul>
                 </div>
             </div>
+
+            <div className="bg-slate-100 shadow-2xl w-full h-4" />
+
+            <ContactForm />
         </main>
     )
 }

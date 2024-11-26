@@ -6,12 +6,12 @@ import { FaGithub, FaLinkedin } from "react-icons/fa6";
 export default () => {
     const router = useRouter();
 
-    const links = [
+    const links = [/*
         { href: "/", label: "Top" },
         { href: "/#about", label: "About" },
         { href: "/#projects", label: "Projects" },
         { href: "/#contact", label: "Contact" },
-    ]
+    */]
 
     return (
         <header className="sticky top-0 flex w-full h-16 py-3 items-center bg-white z-50">
