@@ -6,6 +6,7 @@ import { IntlProvider } from "react-intl";
 
 import "@components/style.css";
 
+import SEO from '@components/meta/SEO';
 import Header from '@components/ui/header';
 import Footer from "@components/ui/footer";
 
@@ -28,6 +29,7 @@ export default ({ Component, pageProps: { ...pageProps }}) => {
 
     return (
         <IntlProvider locale={locale} messages={{}}>
+            <SEO />
             <div className={`relative flex flex-col min-h-screen bg-slate-900 text-slate-100 ${arimo.className}`}>
                 <Header />
                 <Component {...pageProps} />
