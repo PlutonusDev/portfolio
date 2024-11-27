@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { useRouter } from 'next/router';
 import { Arimo } from "next/font/google";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -16,10 +17,14 @@ const arimo = Arimo({
     weight: "400"
 });
 
-let locale = "en";
+import en from "@lang/en.json";
+import fr from "@lang/fr.json";
 
+const langs = { en, fr }
 
 export default ({ Component, pageProps: { ...pageProps }}) => {
+    const { locale } = useRouter();
+
     useEffect(() => {
         AOS.init({
              duration: 800,
@@ -28,7 +33,7 @@ export default ({ Component, pageProps: { ...pageProps }}) => {
      }, [])
 
     return (
-        <IntlProvider locale={locale} messages={{}}>
+        <IntlProvider locale={locale} messages={langs[locale]}>
             <SEO />
             <div className={`relative flex flex-col min-h-screen bg-slate-900 text-slate-100 ${arimo.className}`}>
                 <Header />

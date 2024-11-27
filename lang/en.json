@@ -1,0 +1,35 @@
+{
+    "hero.jobtitle": "Senior Software Engineer / Fullstack Developer",
+
+    "about.heading": "Who am I?",
+    "about.p1": "Hey there! I'm Josh, a software engineer who loves all things tech and aviation. Originally from Cairns, Australia, I'm currently soaking up the French lifestyle (and the amazing food!) on a working holiday visa. I'll be here until September 2025, so if you're nearby, let's connect! I've worn many hats in my career, from building software development teams from scratch to leading exciting projects in the world of aviation simulation. I'm passionate about creating user-friendly software, and I'm always up for a challenge.",
+    "about.p2": "My toolkit includes languages and frameworks like C#, React, and TypeScript, which I use to build everything from web apps to APIs. One of my proudest achievements was leading a team to develop vatACARS, a comprehensive text communication suite for air traffic control simulation. It was a real test of my technical, leadership, and organizational skills, and I loved every minute of it.",
+    "about.p3": "But I'm not just about code. I believe in putting the user first and crafting intuitive, enjoyable experiences. I'm also a big believer in teamwork and open communication. When I'm not geeking out over the latest tech or flying high in the virtual skies, you can find me exploring new places, trying new things, and connecting with interesting people. If you're looking for someone who's passionate, creative, and committed to quality, let's chat! I'm always excited to collaborate and build something amazing.",
+
+    "technologies.heading": "Technologies",
+
+    "projects.heading": "Recent projects",
+    "projects.learnmore": "Learn more",
+
+    "projects.vatacars.heading": "vatACARS Communications Suite",
+    "projects.vatacars.summary": "vatACARS enhances the vatSys air traffic control simulation platform by incorporating realistic ACARS functionality. This plugin allows virtual pilots and controllers to communicate via text messages, mirroring real-world aviation procedures and creating a more immersive and engaging experience for both. By seamlessly integrating this essential communication tool, vatACARS adds a new layer of realism to flight simulation.",
+    "projects.vatacars.date": "2022 - Current",
+
+    "connect.heading": "Let's Connect",
+    "connect.fullname": "Full Name",
+    "connect.email": "Your Email",
+    "connect.email.hint": "you@gmail.com",
+    "connect.message": "Your Message",
+    "connect.message.hint": "Write your message here...",
+    "connect.disclaimer": "I'll send you an email confirming receipt of your message.",
+    "connect.send": "Send Message",
+    "connect.success": "Thank you! Your message was sent.",
+    "connect.fail": "Sorry, something went wrong...",
+
+    "email.preview": "I've received your message!",
+    "email.greeting": "Hi,",
+    "email.intro": "Thank you for your message. I've received it and I will respond as soon as possible.",
+    "email.message": "Your message",
+    "email.signoff": "Best regards",
+    "email.disclaimer": "This email was sent automatically. Replies to this email will be seen. :)"
+}

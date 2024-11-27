@@ -1,0 +1,35 @@
+{
+    "hero.jobtitle": "Ingénieur logiciel principal / développeur Fullstack",
+
+    "about.heading": "A propos",
+    "about.p1": "Salut! Je suis Josh, un ingénieur logiciel qui aime toutes les choses tech et aviation. Originaire de Cairns, en Australie, je suis actuellement en train de me plonger dans le mode de vie français (et la nourriture incroyable!) avec un visa vacances-travail. Je serai ici jusqu’en septembre 2025, alors si vous êtes dans les parages, connectons-nous! J’ai porté de nombreux chapeaux dans ma carrière, de la création d’équipes de développement logiciel à partir de zéro à la direction de projets passionnants dans le monde de la simulation aéronautique. Je suis passionné par la création de logiciels conviviaux et je suis toujours prêt à relever un défi.",
+    "about.p2": "Ma boîte à outils comprend des langages et des frameworks comme C#, React et TypeScript, que j’utilise pour construire tout, des applications web aux API. L’une de mes plus grandes prouesses a été de diriger une équipe pour développer vatACARS, une suite complète de communication textuelle pour la simulation du contrôle du trafic aérien. Ce fut un véritable test de mes compétences techniques, de leadership et d’organisation, et j’ai adoré chaque minute.",
+    "about.p3": "Mais je ne suis pas seulement au sujet du code. Je crois en mettre l’utilisateur d’abord et de créer des expériences intuitives, agréables. Je suis aussi un grand partisan du travail d’équipe et de la communication ouverte. Quand je ne suis pas en train de me morfondre sur les dernières technologies ou de voler haut dans le ciel virtuel, vous pouvez me trouver à explorer de nouveaux endroits, essayer de nouvelles choses et entrer en contact avec des gens intéressants. Si vous cherchez quelqu’un qui est passionné, créatif et engagé à la qualité, discutons! J’ai toujours hâte de collaborer et de construire quelque chose d’incroyable.",
+
+    "technologies.heading": "Technologies",
+
+    "projects.heading": "Projets récents",
+    "projects.learnmore": "Découvrir",
+
+    "projects.vatacars.heading": "'vatACARS' suite de communications",
+    "projects.vatacars.summary": "vatACARS améliore la plateforme de simulation de contrôle du trafic aérien de vatSys en intégrant des fonctionnalités ACARS réalistes. Ce plugin permet aux pilotes et contrôleurs virtuels de communiquer par SMS, en reproduisant les procédures d’aviation du monde réel et en créant une expérience plus immersive et engageante pour les deux. En intégrant de façon transparente cet outil de communication essentiel, vatACARS ajoute une nouvelle couche de réalisme à la simulation de vol.",
+    "projects.vatacars.date": "2022 à aujourd’hui",
+
+    "connect.heading": "Communiquer avec moi",
+    "connect.fullname": "Nom complet",
+    "connect.email": "Votre email",
+    "connect.email.hint": "moi@gmail.com",
+    "connect.message": "Votre message",
+    "connect.message.hint": "Écrivez votre message ici...",
+    "connect.disclaimer": "Je vous enverrai un courriel confirmant la réception de votre message.",
+    "connect.send": "Envoyer le message",
+    "connect.success": "Merci! Votre message a été envoyé.",
+    "connect.fail": "Désolé, quelque chose a mal tourné...",
+
+    "email.preview": "J’ai reçu votre message!",
+    "email.greeting": "Salut",
+    "email.intro": "Merci de votre message. Je l’ai reçu et je vous répondrai dès que possible.",
+    "email.message": "Votre message",
+    "email.signoff": "Cordialement",
+    "email.disclaimer": "Ce courriel a été envoyé automatiquement. Les réponses à ce courriel seront affichées. :)"
+}

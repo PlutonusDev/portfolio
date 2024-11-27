@@ -5,22 +5,44 @@ import {
     Row, Text, Hr
 } from "@react-email/components";
 
-export default ({ name, email, message }) => {
+const locales = {
+    en: {
+        "email.preview": "I've received your message!",
+        "email.greeting": "Hi,",
+        "email.intro": "Thank you for your message. I've received it and I will respond as soon as possible.",
+        "email.message": "Your message",
+        "email.signoff": "Best regards",
+        "email.disclaimer": "This email was sent automatically. Replies to this email will be seen. :)"
+    },
+    fr: {
+        "email.preview": "J’ai reçu votre message!",
+        "email.greeting": "Salut",
+        "email.intro": "Merci de votre message. Je l’ai reçu et je vous répondrai dès que possible.",
+        "email.message": "Votre message",
+        "email.signoff": "Cordialement",
+        "email.disclaimer": "Ce courriel a été envoyé automatiquement. Les réponses à ce courriel seront affichées. :)"
+    }
+}
+
+export default ({ name, email, locale, message }) => {
+    if(!locales[locale]) locale = "en";
+    const messages = locales[locale];
+
     return (
         <Html>
             <Head />
-            <Preview>I've received your message!</Preview>
+            <Preview>{messages["email.preview"]}</Preview>
 
             <Body style={mainStyle}>
                 <Container style={containerStyle}>
                     <Section>
                         <Row>
-                            <Text style={headingStyle}>Hi, {name}!</Text>
-                            <Text style={paragraphStyle}>Thank you for your message. I've received it and I will respond as soon as possible.</Text>
-                            <Text style={messageStyle}>Your message:<br /><br />"{message}"</Text>
-                            <Text style={paragraphStyle}>Best regards,<br />Joshua Hughes</Text>
+                            <Text style={headingStyle}>{messages["email.greeting"]} {name}!</Text>
+                            <Text style={paragraphStyle}>{messages["email.intro"]}</Text>
+                            <Text style={messageStyle}>{messages["email.message"]}:<br /><br />"{message}"</Text>
+                            <Text style={paragraphStyle}>{messages["email.signoff"]},<br />Joshua H</Text>
                             <Hr style={hrStyle} />
-                            <Text style={footerStyle}>https://plutonus.dev/<br/>This email was sent automatically. Replies to this email will be seen. :)</Text>
+                            <Text style={footerStyle}>https://plutonus.dev/<br/>{messages["email.disclaimer"]}</Text>
                         </Row>
                     </Section>
                 </Container>

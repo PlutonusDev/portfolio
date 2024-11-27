@@ -8,7 +8,8 @@
         ],
         "paths": {
             "@components/*": ["./src/components/*"],
-            "@lib/*": ["./src/lib/*"]
+            "@lib/*": ["./src/lib/*"],
+            "@lang/*": ["./lang/*"]
         },
         "allowJs": true,
         "skipLibCheck": true,

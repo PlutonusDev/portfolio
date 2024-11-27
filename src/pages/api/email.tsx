@@ -9,6 +9,11 @@ import EmailReply from "@lib/emails/reply";
 
 const secretKey: string | undefined = process.env.RECAPTCHA_SECRET_KEY;
 
+const subjects = {
+    "en": "Thank you for contacting me!",
+    "fr": "Merci de me contacter!"
+}
+
 export default async (req: NextApiRequest, res: NextApiResponse) => {
     if (req.method !== "POST") {
         return new Response(
@@ -17,7 +22,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
         );
     }
 
-    const { email, name, message, token } = await req.body;
+    const { email, name, message, locale, token } = await req.body;
 
     if (!token) {
         return res.status(405).json({ message: "Recaptcha token missing" })
@@ -42,7 +47,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     });
 
     const emailHtml = await render(<EmailMessage name={name} email={email} message={message} />);
-    const emailReplyHtml = await render(<EmailReply name={name} email={email} message={message} />);
+    const emailReplyHtml = await render(<EmailReply name={name} email={email} message={message} locale={locale} />);
 
     const mailOptions1: Mail.Options = {
         from: process.env.GMAIL_EMAIL,
@@ -54,7 +59,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     const mailOptions2: Mail.Options = {
         from: process.env.GMAIL_EMAIL,
         to: email,
-        subject: `Thank you for contacting me!`,
+        subject: subjects[locale],
         html: emailReplyHtml
     };
 

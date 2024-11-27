@@ -1,6 +1,9 @@
 import Link from "next/link"
+import { useIntl } from "react-intl";
 
 export default ({ title, date, imageurl, href, summary, tags }) => {
+    const intl = useIntl();
+
     return (
         <li key={title} className="py-12">
             <article>
@@ -32,7 +35,7 @@ export default ({ title, date, imageurl, href, summary, tags }) => {
                                 </div>
                             </div>
                             <div className="text-base cursor-pointer font-medium leading-6 group-hover:text-blue-500 transition-all duration-200">
-                                Learn more &rarr;
+                                {intl.formatMessage({ id: "projects.learnmore" })} &rarr;
                             </div>
                         </div>
                     </div>
