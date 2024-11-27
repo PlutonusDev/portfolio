@@ -11,9 +11,13 @@
     "projects.heading": "Recent projects",
     "projects.learnmore": "Learn more",
 
+    "projects.portfolio.heading": "My Porfolio Site",
+    "projects.portfolio.summary": "Initially created in just 48 hours using TypeScript, NextJS and Tailwind, including localisation for English and French. My portfolio will allow me to reach a broader audience and display some of my skills and works firsthand.",
+    "projects.portfolio.date": "Nov 2024 - Current",
+
     "projects.vatacars.heading": "vatACARS Communications Suite",
     "projects.vatacars.summary": "vatACARS enhances the vatSys air traffic control simulation platform by incorporating realistic ACARS functionality. This plugin allows virtual pilots and controllers to communicate via text messages, mirroring real-world aviation procedures and creating a more immersive and engaging experience for both. By seamlessly integrating this essential communication tool, vatACARS adds a new layer of realism to flight simulation.",
-    "projects.vatacars.date": "2022 - Current",
+    "projects.vatacars.date": "Jul 2022 - Current",
 
     "connect.heading": "Let's Connect",
     "connect.fullname": "Full Name",
