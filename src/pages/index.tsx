@@ -56,21 +56,6 @@ export default () => {
             );
 
             tl.fromTo(
-                ".bg",
-                {
-                    x: -300,
-                    opacity: 0
-                },
-                {
-                    opacity: 1,
-                    x: 0,
-                    duration: 4,
-                    ease: "sine.out(0.5,1)"
-                },
-                "<"
-            )
-
-            tl.fromTo(
                 ".orbit",
                 {
                     x: 300,
