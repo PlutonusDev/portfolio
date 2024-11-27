@@ -118,8 +118,11 @@ export default () => {
             <div className="absolute top-0 left-0 w-full h-full z-40">
                 <div className="flex items-center justify-center space-x-4 max-w-8xl mx-auto py-48">
                     <div className="text-white text-center xl:text-left">
-                        <h1 className="text-7xl pb-2 drop-shadow-[0_4px_2px_rgba(0,0,0,0.8)]">{renderLetters("JOSHUA")} {renderLetters("HUGHES")}</h1>
-                        <h2 className="text-4xl font-semibold job-title drop-shadow-[0_2px_1px_rgba(0,0,0,0.8)]">Senior Software Engineer / Fullstack Developer</h2>
+                        <h1 className="text-7xl flex flex-wrap gap-x-4 justify-center lg:justify-start pb-2 drop-shadow-[0_4px_2px_rgba(0,0,0,0.8)]">
+                            <span key="fname">{renderLetters("JOSHUA")}</span>
+                            <span key="lname">{renderLetters("HUGHES")}</span>
+                        </h1>
+                        <h2 className="text-4xl pt-8 lg:py-0 font-semibold job-title drop-shadow-[0_2px_1px_rgba(0,0,0,0.8)]">Senior Software Engineer / Fullstack Developer</h2>
                     </div>
                     <div className="z-40 mx-auto">
                         <Spline className="hidden xl:block orbit" scene="/orbit.splinecode" />
@@ -129,10 +132,10 @@ export default () => {
             <div className="min-h-[calc(100vh-64px)]" />
             <div className="bg-slate-100 shadow-2xl w-full h-4" />
 
-            <div id="about" className="relative">
-                <div className="container max-w-7xl mx-auto py-24">
+            <div id="about" className="relative z-40">
+                <div className="container max-w-7xl px-8 lg:mx-auto py-24">
                     <h1 className="text-5xl font-semibold">Who am I?</h1>
-                    <div className="flex space-x-24">
+                    <div className="lg:flex lg:space-x-24">
                         <div className="flex flex-col mt-8 space-y-4 text-xl">
                             <p key={1}>
                                 Hey there! I'm Josh, a software engineer who loves all things tech and aviation.
@@ -157,11 +160,13 @@ export default () => {
                                 to collaborate and build something amazing.
                             </p>
                         </div>
-                        <img className="h-[512px] p-1 rounded shadow-xl ring-2 ring-slate-500 z-40" src="/joshua.jpg" />
+                        <div className="flex lg:block justify-center">
+                            <img className="h-[512px] p-1 mt-4 lg:mt-0 rounded shadow-xl ring-2 ring-slate-500 z-40" src="/joshua.jpg" />
+                        </div>
                     </div>
                     
                     <h2 className="text-4xl font-bold mt-16">Technologies</h2>
-                    <div className="grid grid-cols-7 gap-x-4 gap-y-2 mt-6">
+                    <div className="grid grid-cols-2 lg:grid-cols-5 xl:grid-cols-7 gap-x-4 gap-y-2 mt-6">
                         <Badge icon={<SiJavascript />} label="JavaScript" />
                         <Badge icon={<SiTypescript />} label="TypeScript" />
                         <Badge icon={<SiCsharp />} label="C#" />
@@ -181,13 +186,13 @@ export default () => {
                         <p className="py-1 px-2 text-lg text-center border-2 border-transparent">and more...</p>
                     </div>
                 </div>
-                <div className="absolute top-0 w-full h-full gradient-hero2" />
+                <div className="absolute top-0 -z-10 w-full h-full gradient-hero2" />
             </div>
 
             <div className="bg-slate-100 shadow-2xl w-full h-4" />
 
             <div id="projects" className="relative z-40">
-                <div className="container max-w-7xl mx-auto py-24">
+                <div className="container max-w-7xl px-8 lg:mx-auto py-24">
                     <h1 className="text-5xl font-semibold">Recent <span className="text-blue-500">Projects</span></h1>
                     <ul className="divide-y divide-gray-200 mt-8">
                         <Project title="vatACARS Communications Suite" date="2022 - Current" imageurl="/projects/vatacars.png" summary="

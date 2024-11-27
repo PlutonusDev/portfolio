@@ -20,8 +20,8 @@ export default ({ title, date, imageurl, href, summary, tags }) => {
                                     <h2 className="text-2xl font-bold leading-8 tracking-light group-hover:text-blue-500 group-hover:pl-2 transition-all duration-200">
                                         {title}
                                     </h2>
-                                    <div className="flex flex-wrap space-x-2">
-                                        {tags.map(tag => (<div className="px-2 rounded border-2 border-blue-500 flex space-x-2 items-center">
+                                    <div className="flex flex-wrap gap-x-2 gap-y-1">
+                                        {tags.map(tag => (<div className="px-2 rounded text-slate-100 border-2 border-blue-500 flex space-x-2 items-center">
                                             {tag.icon}
                                             <span>{tag.label}</span>
                                         </div>))}

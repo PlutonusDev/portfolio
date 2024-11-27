@@ -15,9 +15,9 @@ export default () => {
 
     return (
         <header className="sticky top-0 flex w-full h-16 py-3 items-center bg-white z-50">
-            <div className="container max-w-6xl mx-auto">
+            <div className="hidden lg:block w-full lg:max-w-6xl mx-auto">
                 <div className="relative -mx-4 flex items-center justify-between">
-                    <div className="w-80 max-w-full">
+                    <div className="lg:w-80 max-w-full">
                         <span className="font-semibold text-3xl text-dark">Joshua Hughes</span>
                     </div>
                     <div className="flex space-x-12 items-center text-xl">
@@ -39,6 +39,7 @@ export default () => {
                     </div>
                 </div>
             </div>
+            <span className="lg:hidden px-4 text-center font-semibold text-3xl text-dark">Joshua Hughes</span>
         </header>
     )
 }
