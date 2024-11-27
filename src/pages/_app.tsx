@@ -62,8 +62,8 @@ export default ({ Component, pageProps: { ...pageProps }}) => {
                 <Header />
                 <Component {...pageProps} />
                 <Footer />
-                <div className="absolute bg inset-0 z-10 max-h-screen gradient-hero1" />
-                <div className="absolute inset-0 z-20 h-full bg-[url('/noisetexture.jpg')] opacity-20 mix-blend-soft-light" />
+                <div key="gradient" className="absolute bg inset-0 z-10 max-h-screen gradient-hero1" />
+                <div key="noise" className="absolute inset-0 z-20 h-full bg-[url('/noisetexture.jpg')] opacity-20 mix-blend-soft-light" />
             </div>
         </IntlProvider>
     )
