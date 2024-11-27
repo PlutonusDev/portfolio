@@ -160,7 +160,8 @@ export default () => {
                                 to collaborate and build something amazing.
                             </p>
                         </div>
-                        <div className="flex lg:block justify-center">
+                        <img className="hidden lg:block h-[512px] p-1 mt-4 lg:mt-0 rounded shadow-xl ring-2 ring-slate-500 z-40" src="/joshua.jpg" />
+                        <div className="flex lg:hidden justify-center">
                             <img className="h-[512px] p-1 mt-4 lg:mt-0 rounded shadow-xl ring-2 ring-slate-500 z-40" src="/joshua.jpg" />
                         </div>
                     </div>
